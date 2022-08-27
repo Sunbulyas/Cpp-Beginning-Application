@@ -4,53 +4,52 @@
 
 using namespace std;
 
-const double km = 0.097; // 1 km de aracımız bu kadar litre gaz harcıyor. Opel 1.4
-const double gaz_fiyat = 10.89; // 1 litre gazın fiyatı.
+const double km = 0.097; // My vehicle is consuming how many litre gasoline in 1 km.
+const double gaz_fiyat = 10.89; // The litre of gasoline is purchase with Turkish Liras.
 int main()
 {
 	setlocale(LC_ALL, "Turkish");
 
 	cout << " ************************************" << endl;
-	cout << " *       Araç Yakıt Ölçer v1.0      *" << endl;
+	cout << " *       AraÃ§ YakÄ±t Ã–lÃ§er v1.0      *" << endl;
 	cout << " *       Computer Programing I      *" << endl;
-	cout << " *       Yazar: Yasin SÜNBÜL        *" << endl;
-	cout << " *     Yapım Tarihi: 6.10.2020      *" << endl;
+	cout << " *       Yazar: Yasin SÃœNBÃœL        *" << endl;
+	cout << " *     YapÄ±m Tarihi: 6.10.2020      *" << endl;
 	cout << " ************************************" << endl << endl;
 
 
-	/* Programın amacı belli bir km giden aracın istasyona gittiginde kaç litre yakıt alacağını önceden hesaplamak
-	  1-Aracın markasını, motor hacmini, yakıt türünü ve depo büyüklüğünü yazın
-	  2-Bir aracın 1 km kaç litre yakıt yaktığını bul
-	  3-Depoda ki yakıttan bulduğun litreye böl
+	/* ProgramÄ±n amacÄ± belli bir km giden aracÄ±n istasyona gittiginde kaÃ§ litre yakÄ±t alacaÄŸÄ±nÄ± Ã¶nceden hesaplamak
+	  1-AracÄ±n markasÄ±nÄ±, motor hacmini, yakÄ±t tÃ¼rÃ¼nÃ¼ ve depo bÃ¼yÃ¼klÃ¼ÄŸÃ¼nÃ¼ yazÄ±n
+	  2-Bir aracÄ±n 1 km kaÃ§ litre yakÄ±t yaktÄ±ÄŸÄ±nÄ± bul
+	  3-Depoda ki yakÄ±ttan bulduÄŸun litreye bÃ¶l
 	*/
-	string arac, tür, motor_hacmi;
+	string arac, tÃ¼r, motor_hacmi;
 	int depo;
 	double gidilen_yol;
-	double kullanılan_yakıt;
+	double kullanÄ±lan_yakÄ±t;
 	
 	double total_fiyat;
 
-	cout << " Lütfen aracımızın markasını, motor hacmini, yakıt türünü ve depo büyüklüğünü giriniz." << endl;
+	cout << " LÃ¼tfen aracÄ±mÄ±zÄ±n markasÄ±nÄ±, motor hacmini, yakÄ±t tÃ¼rÃ¼nÃ¼ ve depo bÃ¼yÃ¼klÃ¼ÄŸÃ¼nÃ¼ giriniz." << endl;
 	cout << " Marka : "; cin >> arac;
 	cout << " Motor Hacmi : "; cin >> motor_hacmi;
-	cout << " Yakıt Türü : "; cin >> tür;
+	cout << " YakÄ±t TÃ¼rÃ¼ : "; cin >> tÃ¼r;
 	cout << " Depo Hacmi : "; cin >> depo;
 
-	cout << " Tesekkür ederiz şimdi aracınızla yaptığınız mesafeyi giriniz : "; cin >> gidilen_yol;
+	cout << " TesekkÃ¼r ederiz ÅŸimdi aracÄ±nÄ±zla yaptÄ±ÄŸÄ±nÄ±z mesafeyi giriniz : "; cin >> gidilen_yol;
 
-	kullanılan_yakıt = km * gidilen_yol;
+	kullanÄ±lan_yakÄ±t = km * gidilen_yol;
 
-		if (depo > kullanılan_yakıt)
-				{
-					total_fiyat = gaz_fiyat * kullanılan_yakıt;
-
-					cout << " Yakıt istasyonundan alacağınız litre : " << kullanılan_yakıt << endl;
-					cout << " Yakıtın toplam tutarı : " << total_fiyat << endl;
-				 }
+		if (depo > kullanÄ±lan_yakÄ±t)
+			{
+			       total_fiyat = gaz_fiyat * kullanÄ±lan_yakÄ±t;
+		        	cout << " YakÄ±t istasyonundan alacaÄŸÄ±nÄ±z litre : " << kullanÄ±lan_yakÄ±t << endl;
+				cout << " YakÄ±tÄ±n toplam tutarÄ± : " << total_fiyat << endl;
+			 }
 		else
-				{
-			cout << " Uşağım sen yolda kalmışsın haberin yok :)" << endl;
-				}
+			{
+				cout << " UÅŸaÄŸÄ±m sen yolda kalmÄ±ÅŸsÄ±n haberin yok :)" << endl;
+			}
 	
 	return 0;
 }
