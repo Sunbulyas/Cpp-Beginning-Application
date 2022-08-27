@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "student_study_hours-Lab_5.4", "student_study_hours-Lab_5.4\student_study_hours-Lab_5.4.vcxproj", "{23903CFF-276A-47C5-B0F8-9B59FB386649}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23903CFF-276A-47C5-B0F8-9B59FB386649}.Debug|x64.ActiveCfg = Debug|x64
+		{23903CFF-276A-47C5-B0F8-9B59FB386649}.Debug|x64.Build.0 = Debug|x64
+		{23903CFF-276A-47C5-B0F8-9B59FB386649}.Debug|x86.ActiveCfg = Debug|Win32
+		{23903CFF-276A-47C5-B0F8-9B59FB386649}.Debug|x86.Build.0 = Debug|Win32
+		{23903CFF-276A-47C5-B0F8-9B59FB386649}.Release|x64.ActiveCfg = Release|x64
+		{23903CFF-276A-47C5-B0F8-9B59FB386649}.Release|x64.Build.0 = Release|x64
+		{23903CFF-276A-47C5-B0F8-9B59FB386649}.Release|x86.ActiveCfg = Release|Win32
+		{23903CFF-276A-47C5-B0F8-9B59FB386649}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {066A237F-F03C-46C2-9D45-665BF84E9860}
+	EndGlobalSection
+EndGlobal
